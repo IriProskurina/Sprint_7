@@ -1,6 +1,7 @@
+import pytest
+import requests
 import random
 import string
-import requests
 from data.URLs import url  # Предполагается, что URL хранится здесь
 
 

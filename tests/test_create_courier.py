@@ -1,60 +1,69 @@
+import pytest
 import requests
 import allure
-import pytest
 from data.URLs import url
 from data.courier_data import generation_new_data_courier
-from data.courier_data import register_new_courier_and_return_login_password
-import conftest
+import logging
+
 
 
 class TestCreateCourier:
 
-    @allure.title("Создание курьера")
-    @allure.step('Проверка создания курьера (код - 201 и тест - "ok": True)')
-    def test_create_courier(self):
+    @allure.title('Создание курьера')
+    @allure.step('Проверка создания курьера (код - 201 и текст - "ok": True')
+    def test_create_courier(self, registered_courier_data_):
         data = generation_new_data_courier()
+        data.pop("firstName")  # Удаляем поле для теста
 
         payload = data
-        response = requests.post(f"{url}/api/v1/courier", json=payload)  # Исправлено data на json
+        logging.info(f"Data for courier creation: {data}")
 
-        assert response.status_code == 201
+        response = requests.post(f"{url}/api/v1/courier", data=payload)
+        assert response.status_code == 201, "Курьер не был создан."
         assert response.json() == {"ok": True}, "Неверное содержимое ответа."
 
-    @allure.title("Создание курьера с дублирующимся логином")
-    @allure.description('Проверка создания курьера (код - 409 и текст - "message": "Этот логин уже используется"')
-    def test_create_courier_duplicate_login(self):
-        login_pass = register_new_courier_and_return_login_password()
-        payload = {
-            "login": login_pass[0],
-            "password": login_pass[1],
-            "firstName": "test_firstName"  # Добавлено недостающее поле firstName
+        login_payload = {
+            "login": payload["login"],
+            "password": payload["password"]
         }
-        response = requests.post(f"{url}/api/v1/courier", json=payload)  # Исправлено data на json
+        login_response = requests.post(f"{url}/api/v1/courier/login", data=login_payload)
+        assert login_response.status_code == 200, "Login failed."
 
-        assert response.status_code == 409
-        # Исправлено "massage" на "message" в соответствии с реальным API
-        assert response.json() == {"code": 409, "message": "Этот логин уже используется"}, "Неверное содержимое ответа."
+        courier_id = login_response.json().get("id")
+        assert courier_id is not None, "Courier ID not found in login response."
 
-    @allure.title("Создание курьера с дублирующимся логином")
-    @allure.description('Проверка создания курьера (код - 409 и текст - "message": "Этот логин уже используется"')
-    def test_create_courier_duplicate_login(self):
-        login_pass = register_new_courier_and_return_login_password()
-        payload = {
-            "login": login_pass[0],
-            "password": login_pass[1],
-            "firstName": "test_firstName"
-        }
-        response = requests.post(f"{url}/api/v1/courier", json=payload)
+    # Удаление созданного курьера
+    delete_response = requests.delete(f"{url}/api/v1/courier/{courier_id}")
+    assert delete_response.status_code == 220, "Не удалось удалить курьера."
 
-        assert response.status_code == 409
-        response_data = response.json()
+    @allure.title('Проверка невозможности создать курьера. Дублирующие креды')
+    @allure.description('Проверка, что нельзя создать курьера с уже существующими кредами (код - 409 и текст - "message": "Этот логин уже используется. Попробуйте другой."')
+    def test_create_courier_duplicate_login(self, registered_courier_data):
+        payload = registered_courier_data["data"]
 
-        # Вариант 1: Точное совпадение
-        assert response_data == {
+
+        requests.post(f"{url}/api/v1/courier", data=payload)
+        response = requests.post(f"{url}/api/v1/courier", data=payload)
+
+        assert response.status_code == 409, "Курьер с дублирующими данными был создан."
+        assert response.json() == {
             "code": 409,
             "message": "Этот логин уже используется. Попробуйте другой."
         }, "Неверное содержимое ответа."
 
-        # ИЛИ Вариант 2: Проверка части сообщения
-        assert response_data["code"] == 409
-        assert "Этот логин уже используется" in response_data["message"]
+    @allure.title('Проверка невозможности создать курьера. Не все обязательные поля')
+    @allure.description(
+        'Проверка заполнения не всех обязательных полей. Курьер не создан (код - 400 и текст - "message": "Недостаточно данных для создания учетной записи"')
+    def test_create_courier_without_password(self):
+        data = generation_new_data_courier()
+        payload = {
+            "login": data["login"],
+            "firstName": data["firstName"]
+        }
+        response = requests.post(f"{url}/api/v1/courier", data=payload)
+
+        assert response.status_code == 400, "Курьер был создан без обязательных полей."
+        assert response.json() == {
+            "code": 400,
+            "message": "Недостаточно данных для создания учетной записи"
+        }, "Неверное содержимое ответа."

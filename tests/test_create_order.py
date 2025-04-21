@@ -2,7 +2,7 @@ import requests
 import allure
 import pytest
 
-from conftest import courier_order_cancel
+
 from data.URLs import url
 from faker import Faker
 
@@ -40,5 +40,6 @@ class TestCreateOrder:
         assert r.status_code == 201
         assert 'track' in r.json()
 
-
-        courier_order_cancel(r.json()["track"])
+        d = {"track":str(r.json()["track"])}
+        print(d)
+        courier_order_cancel(d)
