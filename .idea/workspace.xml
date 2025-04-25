@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="27d76117-6622-4639-a2bd-31163ad5977b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/generators.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/methods/courier_methods.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/methods/order_methods.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_list_of_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Sprint_7.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/327fae498051a9d4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/47d084a5dd5a80a6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/8aad903b2fbe4a35.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/attachments/e5d81e7c00b2449c.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/behaviors.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/behaviors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/categories.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/categories.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/packages.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/suites.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/suites.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/1d19c32aebce3416.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/60fc44270a98a215.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/7221d2510a57add5.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/90fad9567eeb5505.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/9508a850be478de7.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/ac57486359614a9b.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/c77c50e39a1b1d85.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/c88d50a8a5544cb4.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/test-cases/ec25add6b7fb8ed8.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/data/timeline.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/export/influxDbData.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/export/mail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/export/prometheusData.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/categories-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/duration-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/history-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/history.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/history/retry-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/plugin/behaviors/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/plugin/packages/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/plugin/screen-diff/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/plugin/screen-diff/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/behaviors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/categories-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/categories.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/duration-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/duration.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/environment.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/executors.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/history-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/launch.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/retry-trend.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/severity.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/status-chart.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/suites.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-report/widgets/summary.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/064b8b2b-05fe-4e40-b674-fa8695c62c18-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/102f2086-2012-45b3-9c65-ed24524d3358-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/1b24f98a-d182-4dfe-9f79-f3176ab517b2-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/25c65d28-d88c-4cca-a0fb-32cdc5fe834c-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/28bbccfa-2460-495d-96f4-82f6133184cd-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/30626564-ebc0-4922-a68d-10bae8bba000-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/3817ffb9-a284-4214-8cf6-637200a611ab-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/3a199f38-b212-4943-ab34-f36c941c9612-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/3b7e54ca-21a1-448f-953c-0ec9d25eedb8-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/3eac54e2-b583-4c70-8d82-61962c8f471c-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/49323dc9-13ad-46b6-93c7-1bdd9454d4e1-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/4a82642e-fa49-4cac-97bd-602c5e263157-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/4e46e392-c4d5-4d96-968f-f480d10ebef8-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/4fcf31b0-d600-47d5-97aa-a13c73eba19f-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/54e9b255-e7be-45fd-8156-57b0f3e1cb8e-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/55fd4092-5b7b-4197-bf4d-d3f038516af6-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/5ace9ea5-b7b0-4054-84eb-dfc944d1d996-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/6a5c34b7-03b4-4aa1-b3d2-53f549791945-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/781e58c7-8590-40e3-a078-4bf909f084d7-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/78750c90-7ad5-431a-af69-de1b6975ca65-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/7e1e3787-ab35-4b46-be76-cfa342a8ee4c-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/86b749b6-9d21-4471-9f66-cac855e16285-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/89767655-9756-4bdd-ade5-f3f39947dca3-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/98a068c4-6d66-4512-82c0-628893387d24-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/aa24a254-764d-442e-9301-5c737f4833dd-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/ae91f587-0523-46fe-bb11-5c27824b352a-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/ced32c5b-f1a3-457d-b566-34b365969199-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/dc68e853-b951-45c8-a507-fdae0f2519e3-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/e3e4596b-15f3-4e42-aa6b-f7c6800e913c-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/e535d429-70c8-4b7f-9e62-9c5f06ae8ecc-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/e8e32ab4-0294-41c0-b80d-db04de02fa4d-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/eafa84d7-4472-4ab0-a2f6-824eaff6abd0-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/f3d707e6-9a24-40be-8dc7-0945f544f869-attachment.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/f9eeaa71-ac19-47f4-9299-312357a72c5c-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/fdd09eac-5adb-4a1d-a665-685ef9847a3b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-results/fde26578-d538-41fb-be35-9ab7bba309d7-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/URLs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/courier_data.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/methods/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_create_courier.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_create_courier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_create_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_create_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_get_list_of_orders.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_login_courier.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_login_courier.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="develop" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../AppData/Local/Temp/e3eb6d62-569e-4107-9ebb-f57f379d725d_Sprint_7-develop (1).zip.25d/Sprint_7-develop/tests/test_accept_the_order.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2vTLlR4DIQ0wZvOolQC9Alo8fjR" />
+  <component name="ProjectViewState">
+    <option name="foldersAlwaysOnTop" value="false" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+    <option name="sortKey" value="BY_TYPE" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Python tests.Python tests for headers.test_city_name.executor": "Run",
+    "Python tests.Python tests for test_basic.test_basic.executor": "Run",
+    "Python tests.Python tests for test_create_courier.TestCreateCourier.executor": "Run",
+    "Python tests.Python tests for test_create_courier.TestCreateCourier.test_create_courier.executor": "Run",
+    "Python tests.Python tests for test_create_courier.TestCreateCourier.test_create_courier_duplicate_login.executor": "Run",
+    "Python tests.Python tests for test_create_courier.TestCreateCourier.test_create_courier_without_firstName.executor": "Run",
+    "Python tests.Python tests for test_create_courier.TestCreateCourier.test_create_courier_without_password.executor": "Run",
+    "Python tests.Python tests for test_create_courier.TestCreateCourier.test_registration_of_duplicate_courier.executor": "Run",
+    "Python tests.Python tests for test_create_courier.TestCreateCourier.test_success_create_courier.executor": "Run",
+    "Python tests.Python tests for test_create_courier.TestCreateCourier.test_successful_courier_registration.executor": "Run",
+    "Python tests.Python tests for test_create_order.TestCreateOrder.executor": "Run",
+    "Python tests.Python tests for test_create_order.TestCreateOrder.test_create_order.executor": "Run",
+    "Python tests.Python tests for test_get_list_of_orders.TestGetListOfOrders.executor": "Run",
+    "Python tests.Python tests for test_get_list_of_orders.TestGetListOfOrders.test_get_list_of_orders.executor": "Run",
+    "Python tests.Python tests for test_get_list_of_orders.TestGetlistOfOrders.executor": "Run",
+    "Python tests.Python tests for test_get_list_of_orders.TestGetlistOfOrders.test_get_list_of_orders.executor": "Run",
+    "Python tests.Python tests for test_login_courier.TestCreateCourier.executor": "Run",
+    "Python tests.Python tests for test_login_courier.TestCreateCourier.test_create_courier.executor": "Run",
+    "Python tests.Python tests for test_login_courier.TestCreateCourier.test_create_courier.test_create_courier_duplicate_login.executor": "Run",
+    "Python tests.Python tests for test_login_courier.TestLoginCourier.executor": "Run",
+    "Python tests.Python tests for test_login_courier.TestLoginCourier.test_get_courier_id.executor": "Run",
+    "Python tests.Python tests for test_login_courier.TestLoginCourier.test_login_courier_without_password.executor": "Run",
+    "Python tests.Python tests for test_login_courier.test_create_courier_without_password.executor": "Run",
+    "Python tests.Python tests for tests.test_create_courier.TestCreateCourier.executor": "Run",
+    "Python tests.Python tests for tests.test_create_courier.TestCreateCourier.test_create_courier.executor": "Run",
+    "Python tests.pytest for test_accept_the_order.TestAcceptOrder.executor": "Run",
+    "Python tests.pytest for test_accept_the_order.TestAcceptOrder.test_accept_order_without_courier_id.executor": "Run",
+    "Python tests.pytest for test_accept_the_order.TestAcceptOrder.test_accept_order_without_order_id.executor": "Run",
+    "Python tests.pytest for test_accept_the_order.TestAcceptOrder.test_success_accept_order.executor": "Run",
+    "Python tests.pytest for test_accept_the_order.TestCancelOrder.executor": "Run",
+    "Python tests.pytest for test_accept_the_order.TestCancelOrder.test_cancel_order_invalid_courier_id.executor": "Run",
+    "Python tests.pytest for test_accept_the_order.TestCancelOrder.test_cancel_order_invalid_order_id.executor": "Run",
+    "Python tests.pytest for test_accept_the_order.TestCancelOrder.test_cancel_order_without_courier_id.executor": "Run",
+    "Python tests.pytest for test_accept_the_order.TestCancelOrder.test_cancel_order_without_order_id.executor": "Run",
+    "Python tests.pytest for test_accept_the_order.TestCancelOrder.test_success_cancel_order.executor": "Run",
+    "Python tests.pytest for test_accept_the_order.TestOrderAcceptance.test_accept_order_missing_courier_id.executor": "Run",
+    "Python tests.pytest for test_accept_the_order.TestOrderAcceptance.test_accept_order_successfully.executor": "Run",
+    "Python tests.pytest for test_create_courier.TestCreateCourier.executor": "Run",
+    "Python tests.pytest for test_create_courier.TestCreateCourier.test_success_create_courier.executor": "Run",
+    "Python tests.pytest for test_create_order.TestCreateOrder.executor": "Run",
+    "Python tests.pytest for test_create_order.TestCreateOrder.test_create_order.executor": "Run",
+    "Python tests.pytest for test_create_order.TestCreateOrders.executor": "Run",
+    "Python tests.pytest for test_create_order.TestOrderMethods.executor": "Run",
+    "Python tests.pytest for test_create_order.TestOrderMethods.test_create_order.executor": "Run",
+    "Python tests.pytest for test_create_order.test_create_order.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestCourierDeletion.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestCourierDeletion.test_delete_courier.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestCourierDeletion.test_delete_courier_with_nonexistent_id.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestCourierDeletion.test_delete_courier_without_id.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestCourierDeletion.test_delete_nonexistent_courier.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestCourierDeletion.test_successful_courier_deletion.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestCourierDeletion.test_successful_delete_courier.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestCourierMethods.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestCourierMethods.test_create_courier.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestCourierMethods.test_delete_courier.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestCourierMethods.test_delete_courier_no_id.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestCourierMethods.test_delete_nonexistent_courier.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestCourierMethods.test_get_courier.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestCourierMethods.test_get_nonexistent_courier.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestDeleteCourier.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestDeleteCourier.test_delete_courier.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestDeleteCourier.test_delete_courier_invalid_id.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestDeleteCourier.test_delete_courier_no_id.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestDeleteCourier.test_delete_courier_nonexistent_id.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestDeleteCourier.test_delete_courier_success.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestDeleteCourier.test_delete_courier_with_nonexistent_id.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestDeleteCourier.test_delete_courier_without_id.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestDeleteCourier.test_delete_nonexistent_courier.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestDeleteCourier.test_error_on_missing_id.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestDeleteCourier.test_error_on_nonexistent_id.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestDeleteCourier.test_successful_courier_deletion.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestDeleteCourier.test_successful_delete_courier.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestDeleteDeliveryCourier.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestDeleteDeliveryCourier.test_delete_delivery_courier.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestDeleteDeliveryCourier.test_successful_delete_courier.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestOrderAcceptance.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestUpdateCourier.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestUpdateCourier.test_update_courier.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestUserDeletion.executor": "Run",
+    "Python tests.pytest for test_delete_courier.TestUserDeletion.test_successful_user_deletion.executor": "Run",
+    "Python tests.pytest for test_delete_courier.test_generate_strategy_missing_data.executor": "Run",
+    "Python tests.pytest for test_delete_courier.test_incorrect_request_no_id.executor": "Run",
+    "Python tests.pytest for test_delete_courier.test_invalid_id_deactivation_attempt.executor": "Run",
+    "Python tests.pytest for test_delete_courier.test_successful_deactivation.executor": "Run",
+    "Python tests.pytest for test_delete_courier.test_successful_delete_courier.executor": "Run",
+    "Python tests.pytest for test_list_of_order.TestListProducts.executor": "Run",
+    "Python tests.pytest for test_list_of_order.TestListProducts.test_get_list_products.executor": "Run",
+    "Python tests.pytest for test_list_of_order.TestOrdersRetrieval.executor": "Run",
+    "Python tests.pytest for test_list_of_order.TestOrdersRetrieval.test_successful_order_retrieval.executor": "Run",
+    "Python tests.pytest for test_login_courier.TestCourierAuthorization.executor": "Run",
+    "Python tests.pytest for test_login_courier.TestCourierAuthorization.test_auth_with_invalid_login.executor": "Run",
+    "Python tests.pytest for test_login_courier.TestCourierAuthorization.test_auth_with_wrong_password.executor": "Run",
+    "Python tests.pytest for test_login_courier.TestCourierAuthorization.test_auth_without_login.executor": "Run",
+    "Python tests.pytest for test_login_courier.TestCourierAuthorization.test_auth_without_password.executor": "Run",
+    "Python tests.pytest for test_login_courier.TestCourierAuthorization.test_successful_courier_login.executor": "Run",
+    "Python tests.pytest for test_login_courier.TestCreateCourier.executor": "Run",
+    "Python tests.pytest for test_login_courier.TestCreateCourier.test_create_courier_without_login.executor": "Run",
+    "Python tests.pytest for test_login_courier.TestCustomerLogin.executor": "Run",
+    "Python tests.pytest for test_login_courier.TestCustomerLogin.test_customer_auth.executor": "Run",
+    "Python tests.pytest for test_login_courier.TestLoginCourier.executor": "Run",
+    "Python tests.pytest for test_login_courier.TestLoginCourier.test_auth_courier.executor": "Run",
+    "Python tests.pytest for test_login_courier.TestLoginCourier.test_auth_with_invalid_user.executor": "Run",
+    "Python tests.pytest for test_login_courier.TestLoginCourier.test_auth_with_wrong_password.executor": "Run",
+    "Python tests.pytest for test_login_courier.TestLoginCourier.test_auth_without_login.executor": "Run",
+    "Python tests.pytest for test_login_courier.TestLoginCourier.test_auth_without_password.executor": "Run",
+    "Python tests.pytest for test_login_courier.TestLoginCustomer.executor": "Run",
+    "Python tests.pytest for test_login_courier.TestLoginCustomer.test_auth_customer.executor": "Run",
+    "Python tests.pytest for tsst_get_order_by_number.TestInvalidOrderScenarios.executor": "Run",
+    "Python tests.pytest for tsst_get_order_by_number.TestInvalidOrderScenarios.test_invalid_format_order_number.executor": "Run",
+    "Python tests.pytest for tsst_get_order_by_number.TestInvalidOrderScenarios.test_invalid_order_number.executor": "Run",
+    "Python tests.pytest for tsst_get_order_by_number.TestInvalidOrderScenarios.test_invalid_type_order_number.executor": "Run",
+    "Python tests.pytest for tsst_get_order_by_number.TestInvalidOrderScenarios.test_negative_order_number.executor": "Run",
+    "Python tests.pytest for tsst_get_order_by_number.TestInvalidOrderScenarios.test_without_order_number.executor": "Run",
+    "Python tests.pytest for tsst_get_order_by_number.TestOrderAcceptance.executor": "Run",
+    "Python tests.pytest for tsst_get_order_by_number.TestOrderAcceptance.test_accept_order_with_invalid_courier_id.executor": "Run",
+    "Python tests.pytest for tsst_get_order_by_number.TestOrderAcceptance.test_accept_order_without_courier_id.executor": "Run",
+    "Python tests.pytest for tsst_get_order_by_number.TestOrderAcceptance.test_successful_accept_order.executor": "Run",
+    "Python.headers.executor": "Run",
+    "Python.postman.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "develop",
+    "ignore_missing_gitignore": "true",
+    "last_opened_file_path": "C:/Users/USER12/Sprint_7",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\USER12\Sprint_7" />
+      <recent name="C:\Users\USER12\Sprint_7\generators" />
+      <recent name="C:\Users\USER12\Sprint_7\tests" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python tests.pytest for test_login_courier.TestCourierAuthorization.test_auth_with_wrong_password">
+    <configuration name="pytest for test_login_courier.TestCourierAuthorization.test_auth_with_invalid_login" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_login_courier.TestCourierAuthorization.test_auth_with_invalid_login&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_login_courier.TestCourierAuthorization.test_auth_with_wrong_password" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_login_courier.TestCourierAuthorization.test_auth_with_wrong_password&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_login_courier.TestCourierAuthorization.test_auth_without_login" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_login_courier.TestCourierAuthorization.test_auth_without_login&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_login_courier.TestCourierAuthorization.test_auth_without_password" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_login_courier.TestCourierAuthorization.test_auth_without_password&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_login_courier.TestCourierAuthorization.test_successful_courier_login" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="Sprint_7" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_parameters" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_login_courier.TestCourierAuthorization.test_successful_courier_login&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.pytest for test_login_courier.TestCourierAuthorization.test_auth_with_wrong_password" />
+        <item itemvalue="Python tests.pytest for test_login_courier.TestCourierAuthorization.test_auth_without_password" />
+        <item itemvalue="Python tests.pytest for test_login_courier.TestCourierAuthorization.test_auth_with_invalid_login" />
+        <item itemvalue="Python tests.pytest for test_login_courier.TestCourierAuthorization.test_auth_without_login" />
+        <item itemvalue="Python tests.pytest for test_login_courier.TestCourierAuthorization.test_successful_courier_login" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-348a24fa61fa-5312c7369657-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-251.23774.444" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="27d76117-6622-4639-a2bd-31163ad5977b" name="Changes" comment="" />
+      <created>1744164267407</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744164267407</updated>
+    </task>
+    <servers />
+  </component>
+</project>
